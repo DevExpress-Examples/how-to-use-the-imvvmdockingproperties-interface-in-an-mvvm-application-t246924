@@ -1,0 +1,20 @@
+﻿<Application xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+             x:Class="SLMVVMDockingDemo.App"
+                 xmlns:View="clr-namespace:SLMVVMDockingDemo.View"
+             xmlns:local="clr-namespace:SLMVVMDockingDemo"
+             xmlns:dxd="http://schemas.devexpress.com/winfx/2008/xaml/docking"
+             >
+    <Application.Resources>
+        <Style TargetType="dxd:DocumentPanel">
+            <Setter Property="Caption" Value="{Binding Caption}" />
+            <Setter Property="CaptionImage" Value="{Binding Glyph}" />
+        </Style>
+        <DataTemplate DataType="local:DocumentViewModel">
+            <View:DocumentView/>
+        </DataTemplate>
+        <DataTemplate DataType="local:PanelViewModel">
+            <View:PanelView/>
+        </DataTemplate>
+    </Application.Resources>
+</Application>
