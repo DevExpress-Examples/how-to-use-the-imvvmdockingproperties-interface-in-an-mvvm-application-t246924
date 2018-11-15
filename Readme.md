@@ -1,3 +1,8 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [SLMVVMDockingDemoTestPage.aspx](./CS/SLMVVMDockingDemo.Web/SLMVVMDockingDemoTestPage.aspx) (VB: [SLMVVMDockingDemoTestPage.aspx](./VB/SLMVVMDockingDemo.Web/SLMVVMDockingDemoTestPage.aspx))
+<!-- default file list end -->
 # How to use the IMVVMDockingProperties interface in an MVVM application
 
 
